@@ -7,6 +7,70 @@
     {
       "question": "hello",
       "answer": "hello there"
+    },
+    {
+      "question": "Hi",
+      "answer": "Hello , How can I help You"
+    },
+    {
+      "question": "I need help",
+      "answer": "Please tell me How can I help You"
+    },
+    {
+      "question": "What is your name",
+      "answer": "My name is Bot Bhai"
+    },
+    {
+      "question": "In which continent India is situated",
+      "answer": "Asia"
+    },
+    {
+      "question": "Which is the national bird of India",
+      "answer": "Peacock"
+    },
+    {
+      "question": "Which colour a rainbow includes",
+      "answer": "VIBGYOR"
+    },
+    {
+      "question": "Who is the owner of TATA industries",
+      "answer": "Sir Ratan Tata"
+    },
+    {
+      "question": "what is the present year",
+      "answer": "2023"
+    },
+    {
+      "question": "What is TCS",
+      "answer": "It is an IT company oiginated from INDIA"
+    },
+    {
+      "question": "Who is the director of INFOSYS",
+      "answer": "Sir Narayan murthy"
+    },
+    {
+      "question": "Sir Narayan murthy",
+      "answer": "Owner of Infosys"
+    },
+    {
+      "question": "Which is the most selling car in India",
+      "answer": "Maruti WagonR"
+    },
+    {
+      "question": "Which car brand is the safest car maker in India",
+      "answer": "TATA"
+    },
+    {
+      "question": "What is the current situation between Israel and palestine",
+      "answer": "They are in a WAR"
+    },
+    {
+      "question": "Is India a developed country",
+      "answer": "It is a developing country and will soon be a developed nation"
+    },
+    {
+      "question": "Is north korea a democratic country",
+      "answer": "No, it is a dictator oriented country !"
     }
   ]
 }
