@@ -71,6 +71,89 @@
     {
       "question": "Is north korea a democratic country",
       "answer": "No, it is a dictator oriented country !"
+    },{
+      "question": " Giddha is the folk dance of",
+      "answer": "Punjab!"
+    },{
+      "question": "How many Cricket world cups does India have",
+      "answer": "India has two cricket world cups.!"
+    },{
+      "question": "Most widely spoken language in the world is",
+      "answer": "Mandarin (Chinese)!"
+    },{
+      "question": " Which is the 29th state of India",
+      "answer": "Telangana is the 29th state of India!"
+    },{
+      "question": " Tripitakas are sacred books of",
+      "answer": "Buddhists!"
+    },{
+      "question": "ICICI is the name of a",
+      "answer": "financial institution!"
+    },{
+      "question": "The pass located at the southern end of the Nilgiri Hills in south India is called",
+      "answer": "the Palghat gap!"
+    },{
+      "question": " Who is known as the father of modern physics?",
+      "answer": "Albert Einstein!"
+    }, {
+      "question": "What is the capital of France?",
+      "answer": "Paris"
+    },
+    {
+      "question": "Who wrote the play 'Romeo and Juliet'?",
+      "answer": "William Shakespeare"
+    },
+    {
+      "question": "What is the largest planet in our solar system?",
+      "answer": "Jupiter"
+    },
+    {
+      "question": "Who painted the Mona Lisa?",
+      "answer": "Leonardo da Vinci"
+    },
+    {
+      "question": "What is the currency of Japan?",
+      "answer": "Japanese Yen"
+    },
+    {
+      "question": "What is the tallest mountain in the world?",
+      "answer": "Mount Everest"
+    },
+    {
+      "question": "Who is the author of 'To Kill a Mockingbird'?",
+      "answer": "Harper Lee"
+    },
+    {
+      "question": "What is the chemical symbol for gold?",
+      "answer": "Au"
+    },
+    {
+      "question": "Which gas do plants absorb from the atmosphere?",
+      "answer": "Carbon dioxide (CO2)"
+    },
+    {
+      "question": "What is the freezing point of water in Fahrenheit?",
+      "answer": "32 degrees Fahrenheit"
+    },
+    {
+      "question": "Who is the first woman to travel into space?",
+      "answer": "Valentina Tereshkova"
+    },
+    {
+      "question": "What is the largest mammal in the world?",
+      "answer": "Blue whale"
+    },
+    {
+      "question": "Who wrote the 'Harry Potter' series?",
+      "answer": "J.K. Rowling"
+    },
+    {
+      "question": "What is the chemical symbol for oxygen?",
+      "answer": "O2"
+    },
+    {
+      "question": "Which planet is known as the 'Red Planet'?",
+      "answer": "Mars"
     }
   ]
 }
