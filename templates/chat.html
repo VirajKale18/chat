@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Bot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+            background-color: #f5f5f5;
+        }
+        .chat-container {
+            max-width: 600px;
+            margin: auto;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .chat-header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border-bottom: 1px solid #ccc;
+            font-size: 20px;
+        }
+        .chat-box {
+            max-height: 400px;
+            overflow-y: scroll;
+            padding: 10px;
+            text-align: left;
+        }
+        .chat-message {
+            margin-bottom: 10px;
+        }
+        .chat-message.bot {
+            color: #007bff;
+            text-align: left;
+        }
+        .chat-message.user {
+            text-align: right;
+        }
+        .input-box {
+            width: calc(100% - 60px);
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin: 0;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .send-button {
+            width: 50px;
+            padding: 8px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .send-button:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">Chat Bot</div>
+        <div class="chat-box" id="chat-box"></div>
+        <div class="input-container">
+            <input type="text" class="input-box" id="user-input" placeholder="Type your message...">
+            <button class="send-button" id="send-button" onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+    <script>
+        function scrollToBottom() {
+            var chatBox = document.getElementById("chat-box");
+            chatBox.scrollTop = chatBox.scrollHeight;
+        }
+
+        function appendMessage(message, sender) {
+            var chatBox = document.getElementById("chat-box");
+            var messageDiv = document.createElement("div");
+            messageDiv.classList.add("chat-message", sender.toLowerCase());
+            messageDiv.innerText = message;
+            chatBox.appendChild(messageDiv);
+            scrollToBottom();
+        }
+
+    function sendMessage() {
+        var userInput = document.getElementById("user-input").value;
+        if (userInput.trim() === "") return;
+        document.getElementById("user-input").value = "";
+        document.getElementById("send-button").disabled = true;
+        appendMessage(userInput, "user");
+
+        if (userInput.toLowerCase() === "quit") {
+            document.getElementById("user-input").disabled = true;
+            return;
+        }
+
+        fetch('/send_message', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ message: userInput })
+        })
+        .then(response => response.json())
+        .then(data => {
+            appendMessage(data.message, "bot");
+            document.getElementById("send-button").disabled = false;
+            if (data.message.includes("Can you teach me?")) {
+                document.getElementById("user-input").placeholder = "Type your answer here...";
+                document.getElementById("user-input").value = "";
+            }
+        });
+    }
+
+document.getElementById("user-input").addEventListener("keyup", function(event) {
+    if (event.key === "Enter") {
+        sendMessage();
+    }
+});
+
+    </script>
+</body>
+</html>
