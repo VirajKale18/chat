@@ -67,6 +67,7 @@
     {
       "question": "Is north korea a democratic country",
       "answer": "No, it is a dictator oriented country !"
+<<<<<<< HEAD
     },
     {
       "question": " Giddha is the folk dance of",
@@ -101,6 +102,33 @@
       "answer": "Albert Einstein!"
     },
     {
+=======
+    },{
+      "question": " Giddha is the folk dance of",
+      "answer": "Punjab!"
+    },{
+      "question": "How many Cricket world cups does India have",
+      "answer": "India has two cricket world cups.!"
+    },{
+      "question": "Most widely spoken language in the world is",
+      "answer": "Mandarin (Chinese)!"
+    },{
+      "question": " Which is the 29th state of India",
+      "answer": "Telangana is the 29th state of India!"
+    },{
+      "question": " Tripitakas are sacred books of",
+      "answer": "Buddhists!"
+    },{
+      "question": "ICICI is the name of a",
+      "answer": "financial institution!"
+    },{
+      "question": "The pass located at the southern end of the Nilgiri Hills in south India is called",
+      "answer": "the Palghat gap!"
+    },{
+      "question": " Who is known as the father of modern physics?",
+      "answer": "Albert Einstein!"
+    }, {
+>>>>>>> fd2df5efd29624aeaaa075137a9e46e7f4783256
       "question": "What is the capital of France?",
       "answer": "Paris"
     },
@@ -159,6 +187,7 @@
     {
       "question": "Which planet is known as the 'Red Planet'?",
       "answer": "Mars"
+<<<<<<< HEAD
     },
     {
       "question": "how are you",
@@ -170,6 +199,8 @@
       "question": "capital of maharashtra",
       "answer": "mumbai"
 >>>>>>> 9ee309c2a9c6ff3e03e1fda662e81e73348f182c
+=======
+>>>>>>> fd2df5efd29624aeaaa075137a9e46e7f4783256
     }
   ]
 }
