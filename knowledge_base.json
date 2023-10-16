@@ -37,10 +37,6 @@
       "answer": "Sir Ratan Tata"
     },
     {
-      "question": "what is the present year",
-      "answer": "2023"
-    },
-    {
       "question": "What is TCS",
       "answer": "It is an IT company oiginated from INDIA"
     },
@@ -167,6 +163,13 @@
     {
       "question": "how are you",
       "answer": "great"
+<<<<<<< HEAD
+=======
+    },
+    {
+      "question": "capital of maharashtra",
+      "answer": "mumbai"
+>>>>>>> 9ee309c2a9c6ff3e03e1fda662e81e73348f182c
     }
   ]
 }
